@@ -1,8 +1,16 @@
 :root {
-  --primary-text-color: #757575;
-  --primary-white-color: #ffffff;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
+    --primary-text-color: #757575;
+    --primary-white-color: #ffffff;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --text-shadow: 0 0 5px #555;
+    --font-logo: 'Comfortaa', 'Segoe UI', sans-serif;
+    --font-text: 'Montserrat', 'Segoe UI', sans-serif;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --text-color: rgba(0, 0, 0, 0.8);
+    --secondary-color:#afb1b8;
+    --accent-grey: #f5f4fa;
+  }
 }
 
 body {
@@ -62,8 +70,7 @@ a {
 
 /*Page header*/
 
-.page-header {
-}
+
 
 /*Address list*/
 
@@ -74,6 +81,11 @@ a {
   font-style: inherit;
   letter-spacing: 0.02em;
   font-weight: 500;
+}
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+  outline: none;
 }
 
 .address .item + .item {
@@ -106,19 +118,14 @@ a {
   font-weight: 500;
 }
 
-.site-nav .link.current {
-  color: var(--accent-color);
-}
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
 
-.address .link:hover,
-.address .link:focus {
+
+.nav-link:hover, .nav-link:focus, .current {
   color: var(--accent-color);
-}
+  outline: none;
+ }
+
 
 /* Section */
 .section-title {
