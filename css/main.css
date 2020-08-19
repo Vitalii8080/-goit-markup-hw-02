@@ -11,7 +11,7 @@
     --secondary-color:#afb1b8;
     --accent-grey: #f5f4fa;
   }
-}
+
 
 body {
   background-color: var(--primary-white-color);
@@ -55,6 +55,7 @@ a {
 .nav-address {
   display: flex;
   align-items: center;
+  height: 81px;
 }
 
 .logo-header {
@@ -108,7 +109,7 @@ a {
   margin-left: 52px;
 }
 
-.site-nav .link {
+.nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -220,6 +221,14 @@ button {
   font-size: 18px;
   line-height: 1.5;
   background-color: #2196f3;
+}
+
+  .bfilters:hover {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    
+  }
+  
 }
 
 /* Footer */
